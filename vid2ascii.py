@@ -39,7 +39,7 @@ def convert_ascii(frame: np.ndarray, width: int, height: int) -> str:
         ascii_image += '\n'
     return ascii_image
 
-def display_frame(ascii_image: str) -> None:
+def display_frame(ascii_image: str, fps : float) -> None:
     # clear the terminal and print ascii image
     os.system('cls' if os.name == 'nt' else 'clear')
     print(ascii_image)
@@ -62,7 +62,7 @@ def main() -> None:
             break
         frame_gray_scaled, width, height = scale_frame(gray_frame(frame))
         frame_ascii = convert_ascii(frame_gray_scaled, width, height)
-        display_frame(frame_ascii)
+        display_frame(frame_ascii, fps)
         
 
 if __name__ == '__main__':

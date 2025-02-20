@@ -4,6 +4,10 @@ This is a small implementation of a Video to ASCII converter in python.
 
 The python script takes a video as input (for example: ".mp4") and displays the video as an ASCII art in the terminal.
 
+You can call it like this in the Terminal:
+
+'python script.py <video_path>'
+
 This project uses the libraries:
 - cv2
 - numpy

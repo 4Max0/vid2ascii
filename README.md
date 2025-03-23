@@ -15,5 +15,7 @@ This project uses the libraries:
 - os
 - time
 
-You will need to install cv2 and numpy as a dependency, through pip, for example.
+You will need to install cv2 and numpy as a dependency, through pip or a package manager for example.
 The requirements.txt shows the exact version the project was built with.
+
+Last updated: 23.03.2025
